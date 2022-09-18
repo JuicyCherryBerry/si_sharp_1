@@ -4,4 +4,14 @@ a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
 */
 Console.Write("Введите первое число ");
-Console.Readline()
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число ");
+int number2 = Convert.ToInt32(Console.ReadLine());
+if (number1 > number2)
+{
+    Console.WriteLine($"Наибольшим числом является {number1}, а наименьшим числом является {number2}");
+}
+else 
+{
+    Console.WriteLine($"Наибольшим числом является {number2}, а наименьшим числом является {number1}");
+}
