@@ -71,16 +71,17 @@ void minStringSum(int[,] arrayToSum)
         }
 }
     int min = SumArray[0];
+    int imin = 0;
     for (int i = 1; i < m; i++)
     {
         if (SumArray[i] < min)
         {
             min = SumArray[i];
-            int imin = i;
-            Console.WriteLine($"Наименьшую сумму элементов имеет {imin} строка");
+            imin = i;
+            
         }        
     }
-    
+    Console.WriteLine($"Наименьшую сумму элементов имеет {imin} строка");
 }
 int[,] generatedArray = generate2Darray(m, n, 0, 100);
 print2Darray(generatedArray);
