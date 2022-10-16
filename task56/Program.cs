@@ -33,12 +33,12 @@ void print2Darray(int[,] arrayToPrint)
     Console.Write(" \t");
     for (int i = 0; i < arrayToPrint.GetLength(1); i++)
     {
-        printColorData(i + "\t");
+        printColorData(i+1 + "\t");
     }
     Console.WriteLine();
      for (int i = 0; i < arrayToPrint.GetLength(0); i++)
     {
-        printColorData(i + "\t");
+        printColorData(i+1 + "\t");
         for (int j = 0; j < arrayToPrint.GetLength(1); j++)
         {
             Console.Write(arrayToPrint[i,j] + "\t");
@@ -81,7 +81,7 @@ void minStringSum(int[,] arrayToSum)
             
         }        
     }
-    Console.WriteLine($"Наименьшую сумму элементов имеет {imin} строка");
+    Console.WriteLine($"Наименьшую сумму элементов имеет {imin+1} строка");
 }
 int[,] generatedArray = generate2Darray(m, n, 0, 100);
 print2Darray(generatedArray);
