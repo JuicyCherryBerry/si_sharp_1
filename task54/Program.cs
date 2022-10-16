@@ -50,9 +50,8 @@ void print2Darray(int[,] arrayToPrint)
 void sortedArray(int[,] arrayToSort)
 {
     for (int i = 0; i < m; i++)
-    {
-      //  int max = arrayToSort[i,0];
-        for (int j = 0; j <  n-1; j++)
+    {     
+       for (int j = 0; j <  n-1; j++)
        {
             for (int k = j + 1; k < n; k++)
             {
